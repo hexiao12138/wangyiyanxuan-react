@@ -25,5 +25,5 @@ export default [
     path: '/user',
     component: lazy(() => import('../components/User')),
     exact: true
-	}
+  }
 ]

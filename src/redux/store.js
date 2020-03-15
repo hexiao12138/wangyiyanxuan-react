@@ -7,5 +7,4 @@ const middleware =
 	process.env.NODE_ENV === 'development'
 		? composeWithDevTools(applyMiddleware(thunk))
 		: applyMiddleware(thunk)
-
 export default createStore(reducers, middleware)

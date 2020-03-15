@@ -1,6 +1,6 @@
 import React, { Suspense } from 'react'
 import { BrowserRouter as Router, Route, Switch } from 'react-router-dom'
-import './index.less'
+import Footer from './components/Footer'
 import Lazy from './components/Lazy'
 import routes from './config/routes'
 export default function App() {
@@ -13,6 +13,7 @@ export default function App() {
 					))}
 				</Switch>
 			</Suspense>
+			<Footer />
 		</Router>
 	)
 }
