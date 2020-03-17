@@ -16,12 +16,12 @@ export default [
   },
   {
     className: 'iconfont iconicon',
-    to: 'cart',
+    to: '/cart',
     name: '购物车'
   },
   {
     className: 'iconfont iconrenwu',
-    to: 'user',
+    to: '/user',
     name: '个人'
   }
 ]

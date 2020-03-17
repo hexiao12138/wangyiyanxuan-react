@@ -14,7 +14,7 @@ import page3 from '../swiper/images/8.png'
 import new1 from './images/1.png'
 import new2 from './images/2.png'
 import Splite from '../Splite'
-export default function Msite() {
+export default function Msite({history}) {
 	const [navList, setNavList] = useState([])
 	const [insuranceList, setInsuranceList] = useState([])
 	const [categoryList, setCategorylist] = useState([])
@@ -67,15 +67,22 @@ export default function Msite() {
 			}
 		})
 	}, [])
+	const goSearch = useCallback(
+		() => {
+			history.push('/search') 
+		},
+		[]
+	)
 	return (
 		<div className="wrapper">
 			<header>
 				<div className="search">
 					<span>网易严选</span>
+					<i className='iconfont iconsousuo'></i>
 					<input
 						type="text"
-						disabled
 						placeholder="搜索商品,共3000件好物"
+						onClick={goSearch}
 					/>
 				</div>
 				<div className="nav">

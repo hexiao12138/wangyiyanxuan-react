@@ -5,7 +5,6 @@ module.exports = override(
        libraryName: 'antd-mobile',
        style: 'css',
      }),
-     
      addPostcssPlugins([require('postcss-pxtorem')({
       rootValue: 37.5,
       propList: ['*']

@@ -25,5 +25,10 @@ export default [
     path: '/user',
     component: lazy(() => import('../components/User')),
     exact: true
+  },
+  {
+    path: '/search',
+    component: lazy(() => import('../components/search')),
+    exact: true
   }
 ]
